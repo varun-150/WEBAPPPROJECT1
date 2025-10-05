@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header('Location: index.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +20,7 @@
       <li>User1 - AWS Certificate - Expiring Soon</li>
       <li>User2 - Data Analyst - Active</li>
     </ul>
-    <a href="dashboard.html" class="btn danger">⬅ Back</a>
+    <a href="dashboard.php" class="btn danger">⬅ Back</a>
   </div>
 </body>
 </html>

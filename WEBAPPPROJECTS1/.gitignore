@@ -1,0 +1,12 @@
+# Ignore the SQLite database
+certtrack.db
+
+# Ignore uploaded files
+uploads/
+
+# Ignore temporary verification files
+jules-scratch/
+
+# Ignore dummy files
+dummy.pdf
+dummy_file.txt
